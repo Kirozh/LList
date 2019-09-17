@@ -23,18 +23,17 @@ public class DoubleConnect {//ссылка и на начало, и на кон�
         Node newNode = new Node(id,dd);
         if (isEmpty())
             first = newNode;
-        else{
-        last.next = newNode;
+        else
+            last.next = newNode;
         last = newNode;
-        }
+
     }
     public void deleteFirst(){
-        if (!isEmpty())
-        {
+        if (first.next == null)
+            last = null;
+        first = first.next;
 
-            first = first.next;
 
-        }
     }
     public void displayList(){
         System.out.println("List first --> last");

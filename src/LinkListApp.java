@@ -48,5 +48,20 @@ public class LinkListApp {
 
         theNodeStack.displayStack();
 
+        //очередь в виде списка с началом и концом
+
+        NodeQueue theQueue = new NodeQueue();
+
+        theQueue.insert(20, 0.2);
+        theQueue.insert(40, 0.4);
+        theQueue.displayQueue();
+
+        theQueue.insert(60, 0.6);
+        theQueue.insert(80, 0.8);
+        theQueue.displayQueue();
+
+        theQueue.remove();
+        theQueue.remove();
+        theQueue.displayQueue();
     }
 }
