@@ -7,7 +7,7 @@ public class LinkList {
         return first==null;
     }
 
-    public void insertLink(int id, double dd){
+    public void insertFirst(int id, double dd){
         Node newLink = new Node(id,dd);
         newLink.next = first;
         first = newLink;
@@ -50,6 +50,7 @@ public class LinkList {
     }
 
     public void displayList(){
+
         System.out.println("List : first --> last");
         Node current = first;
         while (current != null) {
