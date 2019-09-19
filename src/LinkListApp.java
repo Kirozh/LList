@@ -63,5 +63,21 @@ public class LinkListApp {
         theQueue.remove();
         theQueue.remove();
         theQueue.displayQueue();
+
+        System.out.println("_______________________________________________________");
+        SortedList theSortedList = new SortedList();
+        theSortedList.insert(20, 0.2);
+        theSortedList.insert(40, 0.4);
+        theSortedList.displayList();
+
+        theSortedList.insert(10, 0.1);
+        theSortedList.insert(30, 0.3);
+        theSortedList.insert(50,0.5);
+
+        theSortedList.displayList();
+
+        theSortedList.remove();
+
+        theSortedList.displayList();
     }
 }
