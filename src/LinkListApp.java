@@ -82,5 +82,31 @@ public class LinkListApp {
 
         ListInsertionSortApp theListInsertionSortApp = new ListInsertionSortApp();
         theListInsertionSortApp.ListInsertionSort();
+
+        System.out.println("_____________________________________________________");
+        DoublyLinkedList theDoubleLinkedList = new DoublyLinkedList();
+        theDoubleLinkedList.insertFirst(11,1.1);
+        theDoubleLinkedList.insertFirst(33,3.3);
+        theDoubleLinkedList.insertFirst(55,5.5);
+
+
+        theDoubleLinkedList.insertLast(22,2.2);
+        theDoubleLinkedList.insertLast(44,4.4);
+        theDoubleLinkedList.insertLast(66,6.6);
+
+        theDoubleLinkedList.displayForward();
+        theDoubleLinkedList.displayBackward();
+
+        theDoubleLinkedList.deleteKey(11);
+        theDoubleLinkedList.deleteFirst();
+        theDoubleLinkedList.deleteLast();
+
+        theDoubleLinkedList.displayForward();
+
+        theDoubleLinkedList.insertAfter(22, 77, 7.7);
+        theDoubleLinkedList.insertAfter(55, 88, 8.8);
+
+        theDoubleLinkedList.displayForward();
+
     }
 }
