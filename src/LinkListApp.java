@@ -79,5 +79,8 @@ public class LinkListApp {
         theSortedList.remove();
 
         theSortedList.displayList();
+
+        ListInsertionSortApp theListInsertionSortApp = new ListInsertionSortApp();
+        theListInsertionSortApp.ListInsertionSort();
     }
 }
