@@ -49,6 +49,14 @@ public class LinkList {
         return newLink;
     }
 
+    public Node getFirst(){
+
+        return first;
+    }
+
+    public void setFirst(Node f){
+        first = f;
+    }
     public void displayList(){
 
         System.out.println("List : first --> last");
